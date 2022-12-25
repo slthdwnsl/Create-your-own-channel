@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 채널 생성하기"
+            android:textSize="18sp"
+            android:textColor="#212121"
+            android:fontFamily="@font/rokaf_sans_medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="채널 이름"
+            android:inputType="text"
+            android:id="@+id/input_channel_name"
+            android:textColor="#212121"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:fontFamily="@font/rokaf_sans_medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="설명"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="8dp"
+            android:id="@+id/input_description"
+            android:textColor="#212121"
+            android:maxLines="5"
+            android:fontFamily="@font/rokaf_sans_medium"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나만의 채널을 만들어봐요"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/rokaf_sans_medium"/>
+        
+        <TextView
+            android:id="@+id/txt_create_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="채널 생성"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryText"
+            android:fontFamily="@font/rokaf_sans_medium"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

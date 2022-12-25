@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublishContentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoLyt">
+
+        <TextView
+            android:id="@+id/upload_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15sp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:minWidth="77dp"
+            android:gravity="center"
+            android:fontFamily="@font/rokaf_sans_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시물 작성"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_toEndOf="@+id/exit"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/exit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exit"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/txt_content"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:fontFamily="@font/rokaf_sans_medium"
+                android:hint="어떤 생각을 하고 계신가요?"
+                android:gravity="top"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/gallery"
+                android:layout_below="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_add_photo_alternate_24"
+                android:background="@android:color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:id="@+id/progressLyt"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/black"
+                    android:indeterminate="false"
+                    android:background="@drawable/edittext_bg"
+                    android:indeterminateOnly="false"
+                    android:layout_marginTop="5dp"
+                    android:progressDrawable="@drawable/upload_progress_style"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Progress Text"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/rokaf_sans_medium"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/progress_text"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

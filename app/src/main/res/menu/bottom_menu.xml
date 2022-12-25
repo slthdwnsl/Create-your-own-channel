@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="홈"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Shorts"
+        android:id="@+id/shorts"
+        android:icon="@drawable/shorts"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="추가"
+        android:id="@+id/publish"
+        android:icon="@drawable/add_circle"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="커뮤니티"
+        android:id="@+id/forum"
+        android:icon="@drawable/forum"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="보관함"
+        android:id="@+id/library"
+        android:icon="@drawable/library_add"
+        app:showAsAction="ifRoom"/>
+
+</menu>
